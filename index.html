@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vols Pérou–Bolivie 2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&display=swap">
+<style>
+  /* Mise en page : une colonne de lecture, tuiles en grille, graphique pleine largeur. */
+  :root {
+    --bg: #f6f8fa; --panel: #ffffff; --fg: #17202a; --muted: #5b6875; --line: #dde3e9;
+    --accent: #1f5f8b; --ok: #1d7a4a; --warn: #a86400; --bad: #b3362d; --band: rgba(29,122,74,.10);
+    --s1: #1f5f8b; --s2: #c2572b; --s3: #2f8f6b; --s4: #7a4fa3; --s5: #b8860b; --s6: #4a7f9e; --s7: #a33a6b; --s8: #5d6b2f; --s9: #3d3d8f; --s10: #8a5a3c;
+    --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+    --body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f151b; --panel: #172029; --fg: #e8edf2; --muted: #9aa7b4; --line: #2a3642;
+      --accent: #6fb0e0; --ok: #4cc28a; --warn: #e2a33c; --bad: #ef6f64; --band: rgba(76,194,138,.12);
+      --s1: #6fb0e0; --s2: #f08a5d; --s3: #4cc28a; --s4: #b38ae0; --s5: #e2c04f; --s6: #8cc4e0; --s7: #e07aa8; --s8: #a8b86a; --s9: #8f8fe8; --s10: #d0a07a;
+      color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.55 var(--body); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding-block: 32px 56px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 40px; }
+  h1 { font: 700 clamp(28px, 5vw, 40px)/1.1 var(--display); margin: 0; letter-spacing: -.01em; text-wrap: balance; }
+  h2 { font: 600 20px/1.25 var(--display); margin: 0 0 12px; text-wrap: balance; }
+  .lede { font-size: 18px; max-width: 62ch; margin: 12px 0 0; }
+  .lede b { font-variant-numeric: tabular-nums; }
+  .muted { color: var(--muted); font-size: 13px; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 12px; }
+  .tile { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+  .tile .lbl { font-weight: 600; }
+  .tile .val { font: 500 30px/1.1 var(--display); font-variant-numeric: tabular-nums; }
+  .tile .sub { color: var(--muted); font-size: 13px; }
+  .pill { align-self: flex-start; margin-top: 4px; font-size: 12px; padding: 1px 9px; border-radius: 999px; border: 1px solid currentColor; }
+  .pill.ok { color: var(--ok); } .pill.warn { color: var(--warn); } .pill.bad { color: var(--bad); }
+  .chart { position: relative; }
+  .chart svg { display: block; width: 100%; height: auto; }
+  .chart text { fill: var(--muted); font: 12px var(--body); }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 10px; font-size: 13px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .tip { position: absolute; pointer-events: none; background: var(--panel); border: 1px solid var(--line); box-shadow: 0 4px 14px rgba(0,0,0,.15); border-radius: 8px; padding: 6px 10px; font-size: 13px; white-space: nowrap; }
+  .tablewrap { overflow-x: auto; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; }
+  table { border-collapse: collapse; width: 100%; min-width: 720px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  tr:last-child td { border-bottom: 0; }
+  th { font-weight: 500; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 600; }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 32px; }
+  .grid2 > * { min-width: 0; }
+  ul.promos { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  ul.promos li { border-bottom: 1px solid var(--line); padding-bottom: 10px; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  ul.tips { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; max-width: 70ch; }
+  footer { color: var(--muted); font-size: 13px; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Vols Pérou–Bolivie, été 2027</h1>
+    <p class="lede" id="lede">Chargement des prix…</p>
+    <p class="muted">Prix aller-retour par personne, en euros. Départ de Madrid (ou Marseille), 3 semaines en juillet ou août. Mis à jour automatiquement chaque matin. <span id="maj"></span></p>
+  </header>
+
+  <section>
+    <h2>Meilleur prix par itinéraire</h2>
+    <div class="tiles" id="tiles"></div>
+  </section>
+
+  <section>
+    <h2>Évolution du prix le plus bas</h2>
+    <p class="muted">La bande verte va de 600 à 800 €, la cible.</p>
+    <div class="chart" id="chart"></div>
+  </section>
+
+  <section>
+    <h2>Derniers relevés</h2>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Itinéraire</th><th>Mois</th><th>Dates testées</th><th>Prix A/R</th><th>Vol le moins cher</th><th>Remarque</th><th>Source</th></tr></thead>
+        <tbody id="table"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="grid2">
+    <section>
+      <h2>Promos repérées</h2>
+      <ul class="promos" id="promos"></ul>
+    </section>
+    <section>
+      <h2>Stratégie</h2>
+      <ul class="tips">
+        <li>Comparer l’aller-retour simple et l’arrivée à Lima avec retour depuis La Paz (deux billets). Entre les deux, on remonte par Arequipa, Cusco et le lac Titicaca.</li>
+        <li>Arriver par Lima permet de monter en altitude progressivement. La Paz est à 3 600 m.</li>
+        <li>BoA dessert La Paz et Santa Cruz via Cochabamba ou Santa Cruz. C’est souvent l’option la moins chère, avec 2 bagages en soute.</li>
+        <li>Meilleures fenêtres : Black Friday, soldes de janvier d’Iberia et d’Air Europa, puis février–mars.</li>
+        <li>Toujours vérifier le bagage en soute : certains tarifs de base ne l’incluent pas.</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>Relevés sur Google Flights et Kiwi.com. Les prix changent vite : vérifier sur le site de la compagnie avant de réserver.</footer>
+</div>
+
+<script>
+(function () {
+  var DATA = {"releves": [{"route": "BCN-LIM", "libelle": "Barcelone → Lima", "mois": "juillet", "dates": "6 → 27 juil. 2027", "prix": 1180, "compagnie": "LATAM, 1 escale (São Paulo)", "note": "", "source": "Google Flights", "date_releve": "2026-11-20", "id": "2026-11-20_BCN-LIM_juillet"}, {"route": "MAD-LIM-KIWI", "libelle": "Madrid → Lima (Kiwi)", "mois": "août", "dates": "13 août → 6 sept. 2027", "prix": 1192, "compagnie": "Air Transat, 1 escale (Montréal)", "note": "Bagage soute inclus. Meilleur prix en juillet : 1 328 €", "source": "Kiwi.com", "date_releve": "2026-11-20", "id": "2026-11-20_MAD-LIM-KIWI_aout"}, {"route": "MAD-LIM", "libelle": "Madrid → Lima", "mois": "août", "dates": "3 → 24 août 2027", "prix": 1219, "compagnie": "Iberia + American, 1 escale (Miami)", "note": "Direct dès 1 592 €", "source": "Google Flights", "date_releve": "2026-11-20", "id": "2026-11-20_MAD-LIM_aout"}, {"route": "MAD-LIM", "libelle": "Madrid → Lima", "mois": "juillet", "dates": "6 → 27 juil. 2027", "prix": 1117, "compagnie": "Air Canada + Avianca, 2 escales", "note": "Direct LATAM/Iberia dès 1 242 €", "source": "Google Flights", "date_releve": "2026-11-20", "id": "2026-11-20_MAD-LIM_juillet"}, {"route": "MAD-LPB-KIWI", "libelle": "Madrid → La Paz (Kiwi)", "mois": "juillet", "dates": "2 → 22 ou 4 → 26 juil. 2027", "prix": 1035, "compagnie": "BoA, 1 escale (Santa Cruz)", "note": "Bagages en soute inclus. Recherche sur 19 à 23 nuits, 1er juil. → 15 août", "source": "Kiwi.com", "date_releve": "2026-11-20", "id": "2026-11-20_MAD-LPB-KIWI_juillet"}, {"route": "MAD-LPB", "libelle": "Madrid → La Paz", "mois": "août", "dates": "3 → 24 août 2027", "prix": 1322, "compagnie": "1 à 2 escales", "note": "BoA dès 1 502 €", "source": "Google Flights", "date_releve": "2026-11-20", "id": "2026-11-20_MAD-LPB_aout"}, {"route": "MAD-LPB", "libelle": "Madrid → La Paz", "mois": "juillet", "dates": "6 → 27 juil. 2027", "prix": 925, "compagnie": "1 escale", "note": "BoA via Cochabamba dès 1 056 €. Google juge ce prix bas (−446 € vs habituel)", "source": "Google Flights", "date_releve": "2026-11-20", "id": "2026-11-20_MAD-LPB_juillet"}, {"route": "MAD-VVI", "libelle": "Madrid → Santa Cruz", "mois": "juillet", "dates": "6 → 27 juil. 2027", "prix": 931, "compagnie": "1 escale", "note": "BoA via Cochabamba dès 1 056 €. Prix jugé bas par Google (−285 €)", "source": "Google Flights", "date_releve": "2026-11-20", "id": "2026-11-20_MAD-VVI_juillet"}, {"route": "MRS-LIM", "libelle": "Marseille → Lima", "mois": "juillet", "dates": "6 → 27 juil. 2027", "prix": 1214, "compagnie": "1 à 2 escales", "note": "Iberia/LATAM via Madrid dès 1 363 €", "source": "Google Flights", "date_releve": "2026-11-20", "id": "2026-11-20_MRS-LIM_juillet"}, {"route": "OPENJAW-INV", "libelle": "Madrid → La Paz / Lima → Madrid", "mois": "juillet", "dates": "4 juil. → 22 ou 26 juil. 2027", "prix": 1192, "compagnie": "BoA, 2 billets, escale à Santa Cruz", "note": "MAD→LPB 611 € + LIM→MAD 581 €, bagage soute inclus", "source": "Kiwi.com", "date_releve": "2026-11-20", "id": "2026-11-20_OPENJAW-INV_juillet"}, {"route": "OPENJAW", "libelle": "Madrid → Lima / La Paz → Madrid", "mois": "juillet", "dates": "5 juil. → 22 ou 26 juil. 2027", "prix": 1201, "compagnie": "2 billets : Hahn Air via Punta Cana + BoA via Santa Cruz", "note": "MAD→LIM 772 € + LPB→MAD 429 €, bagage soute inclus", "source": "Kiwi.com", "date_releve": "2026-11-20", "id": "2026-11-20_OPENJAW_juillet"}, {"route": "PAR-LIM", "libelle": "Paris → Lima", "mois": "juillet", "dates": "6 → 27 juil. 2027", "prix": 1179, "compagnie": "Air Canada + Avianca, 2 escales", "note": "Direct Air France dès 1 452 €", "source": "Google Flights", "date_releve": "2026-11-20", "id": "2026-11-20_PAR-LIM_juillet"}], "promos": [], "genere": "20/11/2026 à 10:30"};
+  var CIBLE = 800, IDEAL = 600;
+  var NS = 'http://www.w3.org/2000/svg';
+  function eur(n) { return Math.round(n).toLocaleString('fr-FR') + ' €'; }
+  function fmtDate(s) { var p = String(s || '').split('-'); return p.length === 3 ? p[2] + '/' + p[1] + '/' + p[0] : (s || ''); }
+  function el(tag, cls, txt) { var e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; }
+  function svgEl(tag, attrs) { var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); return e; }
+
+  if (!DATA || !DATA.releves || !DATA.releves.length) { document.getElementById('lede').textContent = 'Aucun relevé pour l’instant.'; return; }
+  var rows = DATA.releves.filter(function (r) { return typeof r.prix === 'number'; });
+  document.getElementById('maj').textContent = 'Dernière mise à jour : ' + DATA.genere + '.';
+
+  // Meilleur prix par itinéraire, au dernier relevé de chaque itinéraire.
+  var parRoute = {};
+  rows.forEach(function (r) { (parRoute[r.route] = parRoute[r.route] || []).push(r); });
+  var meilleurs = Object.keys(parRoute).map(function (route) {
+    var list = parRoute[route];
+    var last = list.reduce(function (m, r) { return r.date_releve > m ? r.date_releve : m; }, '');
+    var first = list.reduce(function (m, r) { return r.date_releve < m ? r.date_releve : m; }, last);
+    var best = list.filter(function (r) { return r.date_releve === last; }).reduce(function (a, b) { return b.prix < a.prix ? b : a; });
+    var init = Math.min.apply(null, list.filter(function (r) { return r.date_releve === first; }).map(function (r) { return r.prix; }));
+    return { route: route, libelle: best.libelle, prix: best.prix, mois: best.mois, compagnie: best.compagnie, last: last, variation: best.prix - init };
+  }).sort(function (a, b) { return a.prix - b.prix; });
+
+  var top = meilleurs[0];
+  var lede = document.getElementById('lede');
+  lede.textContent = '';
+  lede.append('Meilleur prix actuel : ', el('b', null, eur(top.prix)), ' aller-retour par personne, sur ' + top.libelle + ' (' + top.mois + '). C’est ',
+    el('b', null, eur(Math.abs(top.prix - CIBLE))), (top.prix > CIBLE ? ' au-dessus de' : ' en dessous de') + ' la cible de 800 €.');
+
+  var tiles = document.getElementById('tiles');
+  meilleurs.forEach(function (d) {
+    var c = el('div', 'tile');
+    c.append(el('div', 'lbl', d.libelle), el('div', 'val', eur(d.prix)));
+    var v = d.variation ? ' · ' + (d.variation < 0 ? '−' : '+') + eur(Math.abs(d.variation)) + ' depuis le 1er relevé' : '';
+    c.append(el('div', 'sub', (d.mois || '') + ' · ' + (d.compagnie || '') + v));
+    c.append(el('span', 'pill ' + (d.prix <= CIBLE ? 'ok' : d.prix <= 1000 ? 'warn' : 'bad'),
+      d.prix <= IDEAL ? 'Super promo' : d.prix <= CIBLE ? 'Dans la cible' : d.prix <= 1000 ? 'Proche' : 'Trop cher'));
+    tiles.append(c);
+  });
+
+  // Graphique : prix le plus bas par itinéraire et par jour de relevé.
+  var box = document.getElementById('chart');
+  function drawChart() {
+    var series = Object.keys(parRoute).map(function (route) {
+      var byDay = {};
+      parRoute[route].forEach(function (r) { byDay[r.date_releve] = Math.min(byDay[r.date_releve] || Infinity, r.prix); });
+      return { route: route, libelle: parRoute[route][0].libelle,
+        pts: Object.keys(byDay).sort().map(function (d) { return { d: d, t: Date.parse(d + 'T00:00:00Z'), p: byDay[d] }; }) };
+    }).sort(function (a, b) { return Math.min.apply(null, a.pts.map(function (p) { return p.p; })) - Math.min.apply(null, b.pts.map(function (p) { return p.p; })); });
+    var W = Math.max(300, box.clientWidth || 700), H = 300, m = { t: 12, r: 18, b: 30, l: 58 };
+    var ts = rows.map(function (r) { return Date.parse(r.date_releve + 'T00:00:00Z'); });
+    var x0 = Math.min.apply(null, ts), x1 = Math.max.apply(null, ts);
+    if (x0 === x1) { x0 -= 3 * 864e5; x1 += 3 * 864e5; }
+    var yMax = Math.max(1100, Math.max.apply(null, rows.map(function (r) { return r.prix; })) * 1.05);
+    yMax = Math.ceil(yMax / 100) * 100; var yMin = 500;
+    function X(t) { return m.l + (t - x0) / (x1 - x0) * (W - m.l - m.r); }
+    function Y(p) { return H - m.b - (p - yMin) / (yMax - yMin) * (H - m.t - m.b); }
+    var svg = svgEl('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img', 'aria-label': 'Évolution du prix aller-retour le plus bas par itinéraire, avec la zone cible entre 600 et 800 euros' });
+    svg.append(svgEl('rect', { x: m.l, y: Y(CIBLE), width: W - m.l - m.r, height: Y(IDEAL) - Y(CIBLE), fill: 'var(--band)' }));
+    var step = (yMax - yMin) > 800 ? 200 : 100;
+    for (var v = yMin; v <= yMax; v += step) {
+      svg.append(svgEl('line', { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), stroke: 'var(--line)' }));
+      var t = svgEl('text', { x: m.l - 8, y: Y(v) + 4, 'text-anchor': 'end' }); t.textContent = v + ' €'; svg.append(t);
+    }
+    var days = Math.round((x1 - x0) / 864e5), nT = Math.max(2, Math.min(Math.floor(W / 110), days + 1));
+    for (var i = 0; i < nT; i++) {
+      var tt = x0 + (x1 - x0) * i / (nT - 1), dd = new Date(tt);
+      var lab = svgEl('text', { x: X(tt), y: H - 8, 'text-anchor': i === 0 ? 'start' : i === nT - 1 ? 'end' : 'middle' });
+      lab.textContent = String(dd.getUTCDate()).padStart(2, '0') + '/' + String(dd.getUTCMonth() + 1).padStart(2, '0'); svg.append(lab);
+    }
+    var tip = el('div', 'tip'); tip.hidden = true;
+    var legend = el('div', 'legend');
+    series.forEach(function (s, i) {
+      var col = 'var(--s' + ((i % 10) + 1) + ')';
+      if (s.pts.length > 1) svg.append(svgEl('polyline', { points: s.pts.map(function (p) { return X(p.t) + ',' + Y(p.p); }).join(' '), fill: 'none', stroke: col, 'stroke-width': 2 }));
+      s.pts.forEach(function (p) {
+        var c = svgEl('circle', { cx: X(p.t), cy: Y(p.p), r: 5, fill: col, stroke: 'var(--panel)', 'stroke-width': 1.5 });
+        c.addEventListener('pointerenter', function (ev) {
+          tip.textContent = s.libelle + ' · ' + fmtDate(p.d) + ' · ' + eur(p.p); tip.hidden = false;
+          var b = box.getBoundingClientRect();
+          tip.style.left = Math.max(0, Math.min(ev.clientX - b.left + 10, b.width - 280)) + 'px';
+          tip.style.top = (ev.clientY - b.top - 38) + 'px';
+        });
+        c.addEventListener('pointerleave', function () { tip.hidden = true; });
+        svg.append(c);
+      });
+      var sp = el('span'), dot = el('i'); dot.style.background = col; sp.append(dot, document.createTextNode(s.libelle)); legend.append(sp);
+    });
+    box.replaceChildren(svg, legend, tip);
+  }
+  drawChart();
+  var rt; window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(drawChart, 150); });
+
+  // Tableau : dernier relevé de chaque itinéraire et mois.
+  var groups = {};
+  rows.forEach(function (r) { var k = r.route + '|' + r.mois; (groups[k] = groups[k] || []).push(r); });
+  var latest = Object.keys(groups).map(function (k) {
+    var list = groups[k], last = list.reduce(function (m, r) { return r.date_releve > m ? r.date_releve : m; }, '');
+    return list.filter(function (r) { return r.date_releve === last; }).reduce(function (a, b) { return b.prix < a.prix ? b : a; });
+  }).sort(function (a, b) { return a.prix - b.prix; });
+  var tb = document.getElementById('table');
+  latest.forEach(function (r) {
+    var tr = el('tr');
+    [r.libelle, r.mois, r.dates, eur(r.prix), r.compagnie, r.note, r.source].forEach(function (c, i) { tr.append(el('td', i === 3 ? 'num' : null, c || '')); });
+    tb.append(tr);
+  });
+
+  // Promos.
+  var ul = document.getElementById('promos');
+  var promos = (DATA.promos || []).slice().sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); }).slice(0, 12);
+  if (!promos.length) { ul.append(el('li', 'muted', 'Aucune promo vers Lima ou la Bolivie pour l’instant. Les sites de bons plans sont vérifiés chaque matin.')); }
+  promos.forEach(function (p) {
+    var li = el('li'), head = el('div'), url = String(p.lien || '');
+    if (/^https?:/i.test(url)) { var a = el('a', null, p.titre || url); a.href = url; a.target = '_blank'; a.rel = 'noopener'; head.append(a); }
+    else head.textContent = p.titre || '';
+    li.append(head, el('div', 'muted', [fmtDate(p.date), p.source, typeof p.prix === 'number' ? eur(p.prix) : ''].filter(Boolean).join(' · ')));
+    ul.append(li);
+  });
+})();
+</script>
+</body>
+</html>
